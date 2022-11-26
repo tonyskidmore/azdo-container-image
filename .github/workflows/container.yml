@@ -36,7 +36,7 @@ jobs:
           severity: 'CRITICAL' #,HIGH
 
       - name: Run the built image.
-        run: docker run --name test-container --entrypoint "/bin/sleep" -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro azure-tools 60
+        run: docker run --name test-container --entrypoint "/bin/sleep" -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro azdo-container-image 60
 
       - name: Verify tools are accessible in the built image.
         run: |
