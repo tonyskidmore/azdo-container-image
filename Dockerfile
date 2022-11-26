@@ -7,4 +7,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     unzip \
     sudo \
-    gpg
+    gpg \
+    ca-certificates \
+    jq
