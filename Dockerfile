@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-ARG AZURE_CLI_VERSION=2.42.0
+ARG AZURE_CLI_VERSION=2.46.0
 
 RUN echo "APT::Get::Assume-Yes \"true\";" > /etc/apt/apt.conf.d/90assumeyes
 
