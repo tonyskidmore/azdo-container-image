@@ -60,6 +60,8 @@ jobs:
             type=schedule,pattern={{date 'YYYYMMDD'}}
             type=sha
             type=semver,pattern={{version}}
+            type=pattern=stable
+            type=ref,event=branch
           flavor: |
             latest=true
 
